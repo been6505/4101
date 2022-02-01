@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Courses to Shopping Cart</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <a href="index.html"> <img src="img/logo.png" id="logo"> </a>
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>รูปสินค้า</th>
+                                                <th>ชื่อสินค้า</th>
+                                                <th>ราคาสินค้า</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">ลบสินค้า</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="hero-content">
+                                <h2>เพื่อการพักผ่อนที่ดีของคุณ</h2>
+                                <p>หมอนยางพาราเพื่อสุขภาพ</p>
+                                <form action="#" id="search" method="post" class="form">
+                                    <input class="u-full-width" type="text" placeholder="ค้นหาสินค้าที่คุณต้องการ " id="search-course">
+                                    <input type="submit" id="submit-search-course" class="submit-search-course">
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icon1">
+                        <p>สินมากกว่าร้อยรายการ <br> ให้คุณได้เลือกซื้อ</p>
+                        
+                    </div>
+                    <div class="four columns icon icon2">
+                        <p>เลือกได้ตาม<br> ความต้องการของคุณ</p>
+                            
+                    </div>
+                    <div class="four columns icon icon3">
+                        <p>จัดส่งสินค้าของคุณ<br>อย่างรวดเร็ว</p>
+                        
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="courses-list" class="container">
+        <h1 id="heading" class="heading">หมอนยางพาราเพื่อสุขภาพ</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pillpw1.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>หมอนยางพาราเพื่อสุขภาพ</h4>
+                        <p>ปัตตานี</p>
+                        <img src="img/stars.png">
+                        <p class="price">200 บาท  <span class="u-pull-right ">150 บาท</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">เพิ่มไปยังรถเข็น</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw2.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนยางพาราเพื่อความฝัน</h4>
+                            <p>ยะลา</p>
+                            <img src="img/stars.png">
+                            <p class="price">250 บาท  <span class="u-pull-right ">200 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw3.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนยางพาราเพื่อความฝัน แพ็คคู่</h4>
+                            <p>ยะลา</p>
+                            <img src="img/stars.png">
+                            <p class="price">499 บาท  <span class="u-pull-right ">300 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pillpw4.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>หมอนหลับสบาย</h4>
+                        <p>กทม</p>
+                        <img src="img/stars.png">
+                        <p class="price">220 บาท  <span class="u-pull-right ">190 บาท</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">เพิ่มไปยังรถเข็น</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw5.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนหนุน</h4>
+                            <p>สมุทรปราการ</p>
+                            <img src="img/stars.png">
+                            <p class="price"> 300 บาท <span class="u-pull-right ">299 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw6.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนยางพารารุ่นดักฝันร้าย</h4>
+                            <p>นครสวรรค์</p>
+                            <img src="img/stars.png">
+                            <p class="price">500 บาท  <span class="u-pull-right ">300 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pillpw7.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>หมอนหนุนตักคนโสด</h4>
+                        <p>เชียงใหม่</p>
+                        <img src="img/stars.png">
+                        <p class="price">600 บาท  <span class="u-pull-right ">400 บาท</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">เพิ่มไปยังรถเข็น</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw9.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนลดกรน</h4>
+                            <p>อุบลราชธานี</p>
+                            <img src="img/stars.png">
+                            <p class="price"> 399 บาท  <span class="u-pull-right ">350 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw10.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนสำหรับเด็กช่างฝัน</h4>
+                            <p>นนทบุรี</p>
+                            <img src="img/stars.png">
+                            <p class="price"> 200 บาท  <span class="u-pull-right ">150 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/pillpw11.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>หมอนแพ็คคนกลัวผี</h4>
+                            <p>กทม</p>
+                            <img src="img/stars.png">
+                            <p class="price"> 700 บาท <span class="u-pull-right ">500 บาท</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">เพิ่มไปยังรถเข็น</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/pillpw12.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>หมอนข้างๆเธอ</h4>
+                                <p>ฉะเชิงเทรา</p>
+                                <img src="img/stars.png">
+                                <p class="price"> 400 บาท <span class="u-pull-right "> 289 บาท</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">เพิ่มไปยังรถเข็น</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/pillpw13.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>หมอนลายไทย</h4>
+                                <p>สุโขทัย</p>
+                                <img src="img/stars.png">
+                                <p class="price">800 บาท  <span class="u-pull-right ">699 บาท</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">เพิ่มไปยังรถเข็น</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">สั่งซื้ออย่างไร</a>
+                                <a class="link" href="#">ช่องทางการชำระเงิน</a>
+                                <a class="link" href="#">Mobile Applications</a>
+                                <a class="link" href="#">สนับสนุน</a>
+                                <a class="link" href="#">ช่วยเหลือฉัน</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">เกี่ยวกับเรา</a>
+                                <a class="link" href="#">ทำงานกับเรา</a>
+                                <a class="link" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
